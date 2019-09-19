@@ -1,0 +1,85 @@
+@import url("../src/colors.css");
+
+.datepickerLabel {
+    height: 21px;
+    font-family: Karla;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--black);
+    margin-bottom: 3px;
+}
+
+.datepickerLabel.true {
+    color: var(--light-blue);
+}
+
+input[type="date"]::-webkit-inner-spin-button, 
+input::-webkit-calendar-picker-indicator {
+    display:none;
+}
+
+
+.datepickerField {
+    padding-right: 40px;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--gray-2);
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0 -1px var(--gray-2);
+    text-transform: uppercase;
+    background-image: url('../src/Icons/Actionable/Calendar.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right 8px top 50%;
+}
+
+.datepickerField:hover{
+    cursor: pointer;
+}
+
+.datepickerField:focus, .datepickerField.true {
+    color: var(--black);
+    box-shadow: inset 0 -2px var(--light-blue);
+    outline: none;
+}
+
+.datepickerField:focus, .datepickerField.true + .datepickerShowCalendar{
+    box-shadow: inset 0 -2px var(--light-blue);
+}
+
+.datepickerField.false.true {
+    color: var(--black);
+}
+
+.datepickerFieldContainer {
+    display: inline-flex;
+}
+
+.datepickerShowCalendar {
+    width: 24px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0 -1px var(--gray-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepickerShowCalendar:hover {
+    cursor: pointer;
+}
+
+.datepickerShowCalendar:focus {
+    outline: none;
+}

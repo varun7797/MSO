@@ -1,0 +1,276 @@
+@import url("../src/colors.css");
+
+
+select {
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	outline: none;
+}
+
+.selectWrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 64px;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+ width: 100%;
+}
+
+.selectWrapper.noheader {
+	height: 40px;
+}
+
+.dropdown {
+	width: 100%;
+	cursor: pointer;
+}
+
+.dropdown.header {
+	cursor: pointer;
+	position: absolute;
+	top: 24px;
+}
+
+.selectWrapper.headerLeft {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.dropHeaderLeft {
+	  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-right: 16px;
+}
+
+
+.dropdown.form {
+	height: 40px;
+	box-shadow: inset 0 -1px 0 0 var(--gray-2);
+	background-image: url('../src/Icons/Actionable/chevrondown.svg');
+	background-repeat: no-repeat, repeat;
+	background-position: right 5px top 50%;
+	padding-right: 24px;
+	font-family: Karla;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--gray-2);
+}
+
+.dropdown.form:focus {
+	box-shadow: inset 0 -2px 0 0 var(--light-blue);
+	background-image: url('../src/Icons/Actionable/chevronup.svg');
+	color: var(--black);
+}
+
+
+.dropdown.filter {
+	height: 40px;
+	box-shadow: inset 0 0 0 1px var(--gray-2);
+	background-image: url('../src/Icons/Actionable/chevrondown.svg');
+	background-repeat: no-repeat, repeat;
+	background-position: right 13px top 50%;
+	padding-left: 8px;
+	padding-right: 40px;
+	font-family: Karla;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--gray-2);
+}
+
+.dropdown.filter:focus {
+	box-shadow: inset 0 0 0 2px var(--light-blue);
+	background-image: url('../src/Icons/Actionable/chevronup.svg');
+	color: var(--black);
+}
+
+.dropdown:focus + .dropHeader {
+	color: var(--light-blue);
+}
+
+.dropdown.form.true, .dropdown.filter.true {
+	color: var(--black);
+}
+
+.dropdown:focus + .dropHeader.true {
+  color: var(--black);
+}
+
+.dropHeader.true {
+	  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.dropMulti {
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--gray-2);
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.dropMulti.form {
+	box-shadow: inset 0 -1px 0 0 var(--gray-2);
+	background-image: url('../src/Icons/Actionable/chevrondown.svg');
+	background-repeat: no-repeat, repeat;
+	background-position: right 5px top 50%;
+}
+
+.dropMulti.form:focus, .dropMulti.form.active {
+		box-shadow: inset 0 -2px 0 0 var(--light-blue);
+	background-image: url('../src/Icons/Actionable/chevronup.svg');
+	background-repeat: no-repeat, repeat;
+	background-position: right 5px top 50%;
+	color: var(--black);
+}
+
+.dropMulti.filter {
+   box-shadow: inset 0 0 0 1px var(--gray-2);
+	background-image: url('../src/Icons/Actionable/chevrondown.svg');
+	background-repeat: no-repeat, repeat;
+	background-position: right 13px top 50%;
+	padding-left: 8px;
+	padding-right: 40px;
+}
+
+.dropMulti.filter:focus, .dropMulti.filter.active {
+	box-shadow: inset 0 0 0 2px var(--light-blue);
+	background-image: url('../src/Icons/Actionable/chevronup.svg');
+	color: var(--black);
+}
+
+.dropMulti.form.exceeded, .dropMulti.filter.exceeded {
+	background-color: rgba(170, 0, 0, 0.03);
+}
+
+.dropMulti.form.exceeded {
+	box-shadow: inset 0 -2px 0 0 var(--red);
+}
+
+.dropMulti.filter.exceeded {
+	box-shadow: inset 0 0px 0 2px var(--red);
+}
+
+.dropMulti.yes {
+	color: var(--black);
+}
+
+.multiselectWrapper {
+	position: relative;
+	width: 100%;
+}
+
+.multiselectWrapper.header {
+	height: 64px;
+	  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.multiselectWrapper.headerLeft {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 40px;
+}
+
+.dropMultiItem {
+	list-style: none;
+}
+
+.dropMultiSubhead {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  position: relative;
+}
+
+.dropClearall {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	color: var(--light-blue);
+	cursor: pointer;
+}
+
+.dropMultiDivider {
+	background-color: var(--gray-4);
+	height: 1px;
+	width: calc(100% + 32px);
+	margin-left: -16px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.dropMultiForm {
+	padding: 8px 16px 8px;
+	width: calc(100% - 32px);
+	position: absolute;
+	z-index: 1;
+  box-shadow: inset 0 0 0 1px var(--gray-4), 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+}
+
+.dropMultiForm.false {
+	visibility: hidden;
+}
+
+.dropMultiWrapper.header {
+	position: absolute;
+	width: 100%;
+	top: 24px;
+}
+
+.dropMultiWrapper.headerLeft {
+	width: 100%;
+}

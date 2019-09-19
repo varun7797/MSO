@@ -1,0 +1,99 @@
+@import url("../src/colors.css");
+
+.verticalOptionText {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--light-blue);
+}
+
+.verticalOptionText.big {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.verticalOptionContextText {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--gray-1);
+}
+
+.verticalOptionWrapperMobile {
+  border-radius: 4px;
+  border: solid 1px var(--gray-2);
+  background-color: var(--white);
+  height: 48px;
+  padding: 0 40px 0 16px;
+  margin: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.verticalOptionWrapperMobile.big {
+	height: 96px;
+    padding: 0 40px 0 16px;
+}
+
+.verticalOptionWrapperDesktop {
+  border-radius: 4px;
+  border: solid 1px var(--gray-2);
+  background-color: var(--white);
+  height: 64px;
+  padding: 0 40px 0 16px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.verticalOptionWrapperDesktop.big {
+	height: 96px;
+    padding: 16px 40px 16px 24px;
+}
+
+.verticalOptionWrapperDesktop.false:hover {
+  box-shadow: 8px 8px 0 0 rgba(51, 51, 51, 0.1);
+  cursor: pointer;
+}
+
+.verticalOptionWrapperDesktop.true:hover {
+  cursor: pointer;
+}
+
+.verticalOptionWrapperDesktop.true {
+  border: solid 2px var(--light-blue);
+  background-color: var(--white);
+  background-image: url('../src/Icons/Actionable/VerticalOption.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 16px top 16px;
+}
+
+.verticalOptionWrapperDesktop.big.true {
+  background-position: right 16px top 24px;
+}
+
+.verticalOptionWrapperMobile.true {
+  border: solid 2px var(--light-blue);
+  background-color: var(--white);
+  background-image: url('../src/Icons/Actionable/VerticalOption.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 16px top 16px;	
+}
+
+
+.verticalOptionWrapperMobile.big.true {
+  background-position: right 16px top 24px;
+}

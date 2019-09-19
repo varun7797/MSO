@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="----Controls" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Controls-/-Check-Box-/-Disabled-Selected" transform="translate(-5.000000, -6.000000)" fill="#B7B7B7" fill-rule="nonzero">
+            <g id="Checkbox" transform="translate(2.000000, 2.000000)">
+                <path d="M8.16292625,13.402243 L15.0901072,4.93781381 C15.3769548,4.54972584 15.9240982,4.46765433 16.3121862,4.75450196 C16.7002742,5.0413496 16.7823457,5.588493 16.495498,5.97658098 L8.91328876,15.2413994 C8.74660017,15.4636796 8.48405226,15.5933329 8.20622875,15.5906083 C7.95106579,15.5906083 7.70867035,15.4789521 7.54281443,15.2850451 L3.54289249,11.0513842 C3.22952955,10.6849906 3.27251939,10.133939 3.638913,9.82057609 C4.00530661,9.50721313 4.55635818,9.55020296 4.86972114,9.91659656 L8.16292625,13.402243 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="2px" viewBox="0 0 10 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="----Controls" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Controls-/-Check-Box-/-Disabled-Indeterminate" transform="translate(-7.000000, -11.000000)" fill="#B7B7B7">
+            <g id="Checkbox" transform="translate(2.000000, 2.000000)">
+                <rect id="Rectangle" x="5.83333333" y="9.16666667" width="8.33333333" height="1.66666667"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,143 @@
+@import url("../src/colors.css");
+
+.inputContainer {
+	position: relative;
+	min-height: 64px;
+	display: grid;
+	margin-bottom: 32px;
+	transition: all 0.3s ease;
+}
+
+.inputContainer2 {
+	height: 40px;
+	display: grid;
+}
+
+.inputLabel {
+	height: 21px;
+	font-family: Karla;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--light-blue);
+	margin-bottom: 3px;
+}
+
+.inputLabel.false {
+	color: var(--black);
+}
+
+.inputHint {
+	font-family: Karla;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--gray-2);
+	position: absolute;
+	left: 0px;
+	bottom: -24px;
+}
+
+.inputChar {
+	font-family: Karla;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--gray-2);
+	position: absolute;
+	right: 0px;
+	bottom: -24px;
+	text-align: right;
+}
+
+.inputChar.exceeded {
+	color: var(--red);
+}
+
+.inputFieldContainer {
+	display: inline-flex;
+	align-items: center;
+		transition: all 0.3s ease;
+}
+
+.inputShowHide {
+	display: flex;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	font-family: Karla;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: right;
+	color: var(--light-blue);
+	text-align: center;
+	position: relative;
+	user-select: none;
+	border-bottom: solid 2px var(--light-blue);
+	box-sizing: border-box;
+}
+
+.inputShowHide:hover {
+	cursor: pointer;
+}
+
+.inputShowHide.true.false {
+	color: var(--gray-2);
+	border-bottom: solid 1px var(--gray-2);
+}
+
+.inputField {
+	position: relative;
+	width: 100%;
+	font-family: Karla;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--gray-2);
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 1px var(--gray-2);
+	box-sizing: border-box;
+
+}
+
+.inputField:hover:enabled {
+	background-color: var(--gray-6);
+	color: var(--black);
+}
+
+.inputField:hover:enabled + .inputShowHide {
+	background-color: var(--gray-6)
+}
+
+.inputField:focus {
+	color: var(--black);
+	border-bottom: solid 2px var(--light-blue);
+	outline: none;
+}
+
+.inputField:valid {
+	color: var(--black);
+}
+
+.inputField:disabled {
+	color: var(--gray-2);
+	border: none;
+}

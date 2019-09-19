@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icons / Directional / Up Arrow Fill</title>
+    <desc>Created with Sketch.</desc>
+    <g id="----Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Directional-/-Value-Up" transform="translate(-2.000000, -2.000000)">
+            <g id="Icons-/-Directional-/-Up-Arrow-Fill" transform="translate(2.000000, 2.000000)">
+                <circle id="Oval" fill="#32D400" cx="10" cy="10" r="10"></circle>
+                <polygon id="Shape" fill="#333333" points="5 10 9 10 9 15 11 15 11 10 15 10 10 5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

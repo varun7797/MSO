@@ -1,0 +1,116 @@
+@import url("../src/colors.css");
+
+.controlContainer {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.controlLabel {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-left: 8px;
+  margin-right: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buttonContainer {
+	height: 48px;
+	width: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* indeterminate */
+
+.state.indeterminate {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+.state.indeterminate:hover {
+	transition: box-shadow 0.1s ease;
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.05);
+	cursor: pointer;
+}
+
+.state.indeterminate:focus {
+	transition: box-shadow 0.1s ease;
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.12);
+	outline: none;
+}
+
+.state.indeterminate:active {
+	transition: box-shadow 0.1s ease;
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.20);
+}
+
+.buttonState.indeterminate {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 2.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttonState.indeterminate.off {
+	height: 20px;
+	width: 20px;
+	border: solid 2px var(--light-blue);
+	background-color: var(--white);
+}
+
+.buttonState.indeterminate.on {
+	background-color: var(--light-blue);
+}
+
+.buttonStateIcon.indeterminate.on {
+	height: 16px;
+	width: 16px;
+}
+
+.disabledState.indeterminate {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+
+
+.disabledButtonState.indeterminate {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 2.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 2px var(--gray-3);
+	background-color: var(--gray-6);
+}
+
+.disabledButtonStateIcon.indeterminate.on {
+	height: 16px;
+	width: 16px;
+}

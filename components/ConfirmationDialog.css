@@ -1,0 +1,112 @@
+@import url("../src/colors.css");
+
+.bg {
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.windowDesktop {
+	background-color: #fff;
+	padding: 24px;
+}
+
+.windowMobile {
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+	padding: 24px;
+}
+
+
+.Header {
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.subheader {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-top: 8px;
+}
+
+.primary {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--light-blue);
+}
+
+.primary:hover {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--dark-blue);
+}
+
+.secondary {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--light-blue);
+}
+
+.secondary:hover {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--dark-blue);
+}
+
+.actions {
+  float: right;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 24px;
+  grid-column-gap: 24px;
+  margin-top: 24px;
+}
+
+.textContainer {
+	padding-bottom: 24px;
+}

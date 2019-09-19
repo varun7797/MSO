@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="----Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Stepper-/-~Element-/-Current" transform="translate(0.000000, -3.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#006600" stroke-width="2">
+            <g id="Stepper-/-Current-stepper">
+                <circle id="Icon" cx="9" cy="12" r="8"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

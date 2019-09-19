@@ -1,0 +1,33 @@
+@import url("../src/colors.css");
+
+.divider {
+}
+
+.divider.horizontal {
+  height: 1px;
+  width: 100%;
+}
+
+.divider.vertical {
+	width: 1px;
+	min-height: 100px;
+	height: 100%;
+	margin: 0 16px 0;
+}
+
+.divider.light {
+	background-color: var(--gray-4);
+}
+
+.divider.dark {
+	background-color: var(--white)
+}
+
+.divider.default {
+	margin: 16px 0 16px;
+}
+
+.divider.dense {
+	margin: 8px 0 8px;
+}
+

@@ -1,0 +1,240 @@
+@import url("../src/colors.css");
+
+
+.checkbox {
+  display: flex;
+  align-items: center;
+	position: relative;
+	padding: 8px;
+}
+
+
+.checkbox.false {
+	padding: 4px;
+}
+
+.checkLabel {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  position: relative;
+  left: -8px;
+ }
+
+.checkSwitchLabel {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  position: relative;
+  left: -10px;
+}
+
+.checkboxInput {
+	position: relative;
+	flex-shrink: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 2.5px;
+	border: solid 2px var(--light-blue);
+	background-color: var(--white);
+	z-index: 1;
+
+
+}
+
+.radio {
+	position: relative;
+	flex-shrink: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	outline: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: solid 2px var(--light-blue);
+	background-color: var(--white);
+	z-index: 1;
+
+
+}
+
+.Chover, .Cnohover {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border-radius: 100%;
+	position: relative;
+	left: -23px;
+	transition: box-shadow 0.1s ease;
+} 
+
+.radio:hover + .Chover, .checkboxInput:hover + .Chover{
+    box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.05);
+}
+
+.radio:focus + .Chover, .checkboxInput:focus + .Chover {
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.12);
+}
+
+.radio:active + .Chover, .checkboxInput:active + .Chover {
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.20);
+}
+
+.radio:checked {
+		  background-image: url('../src/Icons/Actionable/Radio-checked.svg');
+		background-repeat: no-repeat, repeat;
+  		background-position: left 50% top 50%;
+}
+
+.radio:disabled {
+	background-color: var(--gray-6);
+		border: solid 2px var(--gray-3);
+}
+
+.radio:disabled:checked {
+	  background-image: url('../src/Icons/Actionable/Radio-disabled-checked.svg');
+		background-repeat: no-repeat, repeat;
+  		background-position: left 50% top 50%;
+}
+
+
+.checkboxInput:before, {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      bottom: 50%;
+      left: 50%;
+      transition: all .1s;
+    }
+
+    .checkboxInput:checked {
+    	background-color: var(--light-blue);
+		  background-image: url('../src/Icons/Actionable/Checkbox-checked.svg');
+		background-repeat: no-repeat, repeat;
+  		background-position: left 50% top 50%;
+    }
+
+    .checkboxInput:disabled:hover + .Chover {
+    	box-shadow: none;
+    }
+
+
+    .checkboxInput:disabled {
+        border: solid 2px var(--gray-3);
+		background-color: var(--gray-6);
+      cursor: default;
+    }
+
+    .checkboxInput:disabled:checked {
+		 background-image: url('../src/Icons/Actionable/Checkbox-disabled-checked.svg');
+		background-repeat: no-repeat, repeat;
+  		background-position: left 50% top 50%;
+    }
+
+  .checkbox--indeterminate:checked {
+	 	background-image: url('../src/Icons/Actionable/Indeterminate-checked.svg');
+		background-repeat: no-repeat, repeat;
+  		background-position: left 50% top 50%;
+  }
+  
+  .checkbox--indeterminate:disabled:checked {
+		background-image: url('../src/Icons/Actionable/Indeterminate-disabled-checked.svg');
+		background-repeat: no-repeat, repeat;
+  		background-position: left 50% top 50%;
+  }
+
+  .checkbox--switchInput, .checkbox--switchInputnohover {
+
+  width: 22px;
+  height: 22px;
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.4);
+	  border-radius: 100%;
+  background-color: var(--white);
+  	border: none;
+  	transition: all 0.1s ease;
+    
+  }
+
+  .checkbox--switchInput + .Chover,   .checkbox--switchInput + .Cnohover, .checkbox--switchInputnohover + .Chover,   .checkbox--switchInputnohover + .Cnohover  {
+	  width: 48px;
+	  height: 24px;
+	  border-radius: 12px;
+  background-color: var(--gray-3);
+  	border: none;
+  	left: -26px;
+  }
+
+  .checkbox--switchInput:hover, .checkbox--switchInput:checked:hover {
+  	box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.4), 0 0 0 12px rgba(13, 13, 13, 0.05) ;
+  }
+
+.checkbox--switchInput:focus, .checkbox--switchInput:checked:focus {
+  	box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.4), 0 0 0 12px rgba(13, 13, 13, 0.12) ;
+  }
+
+.checkbox--switchInput:active, .checkbox--switchInput:checked:active {
+  	box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.4), 0 0 0 12px rgba(13, 13, 13, 0.20) ;
+  }
+
+  .checkbox--switchInput:checked +.Chover, .checkbox--switchInput:checked +.Cnohover, .checkbox--switchInputnohover:checked +.Chover, .checkbox--switchInputnohover:checked +.Cnohover {
+  	background-color: var(--light-blue);
+  }
+
+  .checkbox--switchInput:hover + .Chover, .checkbox--switchInput:hover + .Cnohover {
+  	box-shadow: none;
+  }
+
+.checkbox--switchInput:focus + .Chover, .checkbox--switchInput:focus + .Cnohover {
+  	box-shadow: none;
+  }
+
+.checkbox--switchInput:active + .Chover, .checkbox--switchInput:active + .Cnohover  {
+  	box-shadow: none;
+  }
+
+  .checkbox--switchInput:checked, .checkbox--switchInputnohover:checked {
+  width: 22px;
+  height: 22px;
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.4);
+	  border-radius: 100%;
+  background-color: var(--white);
+  	border: none;
+		background-image: none;
+		transform: translateX(24px);
+  }
+
+  .checkbox--switchInput:disabled, .checkbox--switchInputnohover:disabled {
+  	border: none;
+  	background-color: var(--white);
+  }
+
+  .checkbox--switchInput:disabled:hover {
+  	box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.4);
+  }
+
+  .checkbox--switchInput:disabled + .Chover,  .checkbox--switchInput:disabled + .Cnohover,   .checkbox--switchInputnohover:disabled + .Chover,  .checkbox--switchInputnohover:disabled + .Cnohover {
+  	background-color: var(--gray-5);
+  }
+
+  .checkbox--switchInput:disabled:checked, .checkbox--switchInputnohover:disabled:checked {
+  	background-image: none;
+  }
+

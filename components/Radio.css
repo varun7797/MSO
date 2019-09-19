@@ -1,0 +1,109 @@
+@import url("../src/colors.css");
+
+.controlContainer {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.controlLabel {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-left: 8px;
+  margin-right: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buttonContainer {
+	height: 48px;
+	width: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* radio */
+
+.state.radio {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background-color: var(--light-blue);
+}
+
+.state.radio:hover {
+	transition: box-shadow 0.1s ease;
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.05);
+	cursor: pointer;
+}
+
+.state.radio:focus {
+	transition: box-shadow 0.1s ease;
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.12);
+	outline: none;
+}
+
+.state.radio:active {
+	transition: box-shadow 0.1s ease;
+	box-shadow: 0 0 0 12px rgba(13, 13, 13, 0.20);
+}
+
+.buttonState.radio {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+.buttonState.radio.off {
+	border: 2px solid var(--white);
+	background-color: var(--light-blue);
+}
+
+.buttonState.radio.on {
+	border: 2px solid var(--white);
+	background-color: var(--white);
+}
+
+.disabledState.radio {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background-color: var(--gray-3);
+}
+
+.disabledButtonState.radio {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+
+.disabledButtonState.radio.off {
+	border: 2px solid var(--gray-6);
+	background-color: var(--gray-6);
+}
+
+.disabledButtonState.radio.on {
+	border: 2px solid var(--gray-6);
+	background-color: var(--gray-3);
+}
+

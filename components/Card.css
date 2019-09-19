@@ -1,0 +1,186 @@
+@import url("../src/colors.css");
+
+/*      avatar card     */
+
+.card {
+  display: inline-block;
+}
+.card.avatar {
+  min-width: 367px;
+  height: 80px;
+  background-color: var(--white);
+  display: inline-grid;
+  grid-template-columns: 48px auto;
+  grid-template-rows: 48px;
+  grid-column-gap: 16px;
+}
+
+.layout.avatar {
+	width: auto;
+	height: 48px;
+	padding: 16px;
+}
+
+.imgcontainer.avatar {
+}
+
+.img.avatar {
+	height: 48px;
+	width: 48px;
+	padding: 16px;
+	border-radius: 3px;
+}
+
+.header.avatar {
+  width: auto;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--light-blue);
+}
+
+.category.avatar {
+  height: 0;
+  width: 0;
+}
+
+.details.avatar {
+  width: auto;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+/*      content card     */
+
+
+.card.content {
+  width: 367px;
+  height: auto;
+  background-color: var(--white);
+  transition: background-color .3s ease-out;
+}
+
+.card.content:hover{
+  background-color: var(--black-5);
+  cursor: pointer;
+
+}
+
+.card.content:hover .header.content{
+	color: var(--light-blue);
+}
+
+.img.content {
+	width: auto;
+	height: auto;
+}
+
+.layout.content {
+	padding: 40px;
+	height: auto;
+}
+
+.header.content {
+  width: auto;
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.category.content {
+  width: auto;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  color: var(--black);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.details.content {
+  width: auto;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+/*      hero card     */
+
+.card.hero {
+  width: 367px;
+  height: auto;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.layout.hero {
+	padding: 30px 35px 40px;
+	height: auto;
+}
+
+.imgcontainer.hero {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+}
+
+.img.hero {
+	width: 80px;
+}
+
+.header.hero {
+  width: auto;
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.category.hero {
+  width: 0;
+  height: 0;
+}
+
+.details.hero {
+  width: auto;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+

@@ -1,0 +1,61 @@
+@import url("../src/colors.css");
+
+.tooltip {
+	position: absolute;
+	padding: 8px;
+	box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.5);
+	background-color: var(--black);
+	font-family: Karla;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--white);
+
+}
+
+.tooltipTop {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--black) transparent transparent transparent;
+}
+
+.tooltipBottom {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--black) transparent;
+}
+
+.tooltipLeft {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; 
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--black);
+}
+
+.tooltipRight {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--black) transparent transparent;
+}

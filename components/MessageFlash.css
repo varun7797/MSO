@@ -1,0 +1,179 @@
+@import url("../src/colors.css");
+
+.messageFlashContainer {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  background-color: var(--black);
+  padding: 4px 4px 4px 16px;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  max-width: 640px;
+}
+
+.messageFlashContainer.simple {
+	display: inline-grid;
+	grid-template-columns: auto auto;
+}
+
+.messageFlashContainer.lostconnection {
+	display: inline-grid;
+	justify-content: center;
+	padding: 16px 16px 16px;
+}
+
+.messageFlashContainer.actionsinline {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto;
+	align-items: center;
+}
+
+.messageFlashContainer.actionsonbottom {
+	display: inline-grid;
+	grid-template-columns: auto auto;
+}
+
+
+.messageFlashActionsonbottomWrapper {
+	display: inline-grid;
+	grid-template-rows: auto auto;
+}
+
+.messageFlashActionsonbottom {
+	display: inline-grid;
+	grid-template-columns: auto auto;
+}
+
+.messageFlashLabel {
+	color: var(--white);
+	margin: 12px 0 12px;
+}
+
+.messageFlashAction {
+	color: var(--pale-blue);
+	margin-left: 24px;
+}
+
+.messageFlashAction:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.messageFlashAction.actionsonbottom {
+	margin: 4px 0 12px;
+}
+
+.messageFlashCloseButton {
+	height: 48px;
+	width: 48px;
+	border-radius: 100%;
+	border: none;
+	background-color: transparent;
+	background-image: url('../src/Icons/Actionable/Close.svg');
+	background-repeat: no-repeat;
+	background-position: right 50% top 50%;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+.messageFlashCloseButton:hover {
+  background-color: var(--white-20);
+  cursor: pointer;
+}
+
+.messageFlashCloseButton:focus {
+	outline: none;
+}
+
+
+
+.mfWrapper {
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  background-color: var(--black);
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--white);
+}
+
+.mfWrapper.simple {
+	padding: 16px 52px 16px 16px;
+}
+
+.mfWrapper.lostconnection {
+	padding: 16px;
+	text-align: center;
+}
+
+.mfWrapper.actionsinline {
+	padding: 16px 80px 16px 16px;
+}
+
+.mfWrapper.actionsonbottom {
+	padding: 16px 52px 56px 16px;
+}
+
+.mfButton {
+	cursor: pointer;
+	font-family: Karla;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: var(--pale-blue);
+}
+
+.mfButton:hover {
+	text-decoration: underline;
+}
+
+.mfClose {
+	width: 48px;
+	height: 48px;	
+	background-color: transparent;
+	border-radius: 100%;
+	border: none;
+	background-image: url('../src/Icons/Actionable/Close.svg');
+	background-repeat: no-repeat;
+	background-position: right 50% top 50%;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.1s ease;
+}
+
+.mfClose:hover {
+	  background-color: var(--white-20);
+
+}
+
+.mfTextWrapper.actionsinline {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 24px;
+}
+
+.mfTextWrapper.actionsonbottom {
+}
+
+.mfTextBottom {
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 24px;
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+}

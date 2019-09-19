@@ -1,0 +1,226 @@
+@import url("../src/colors.css");
+
+.modalBackdrop {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.modalBackdropMobileOverlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+  padding: 24px;
+}
+
+.modalBackdropMobileFullscreen {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.modalContainer {
+  background-color: var(--white);
+  padding: 32px;
+
+}
+
+.modalContainer.s {
+	width: 480px;
+}
+
+.modalContainer.m {
+	width: 680px;
+}
+
+.modalContainer.l {
+	width: 994px;
+}
+
+
+
+.modalContainerMobileOverlay {
+  background-color: var(--white);
+  padding: 32px;
+  width: 100%;
+  height: auto;
+}
+
+.modalContainerMobileFullscreen {
+  background-color: var(--white);
+  padding: 32px 32px 80px;
+  width: 100%;
+}
+
+.modalCloseContainer {
+	display: grid;
+	justify-content: right;
+	margin-top: -16px;
+	margin-right: -16px;
+}
+
+.modalClose {
+	height: 48px;
+	width: 48px;
+	border-radius: 100%;
+	border: none;
+	background-color: transparent;
+	background-image: url('../src/Icons/Actionable/CloseBlack.svg');
+	background-repeat: no-repeat;
+	background-position: right 50% top 50%;
+}
+
+.modalCloseMobile {
+	position: absolute;
+	right: 4px;
+	height: 48px;
+	width: 48px;
+	border-radius: 100%;
+	border: none;
+	background-color: transparent;
+	background-image: url('../src/Icons/Actionable/CloseBlack.svg');
+	background-repeat: no-repeat;
+	background-position: right 50% top 50%;
+}
+
+.modalBack {
+	position: absolute;
+	left: 8px;
+	top: 16px;
+	height: 48px;
+	width: 48px;
+	border-radius: 100%;
+	border: none;
+	background-color: transparent;
+	background-image: url('../src/Icons/Actionable/ArrowBack.svg');
+	background-repeat: no-repeat;
+	background-position: right 50% top 50%;
+}
+
+.modalBackMobile {
+	position: absolute;
+	left: 4px;
+	height: 48px;
+	width: 48px;
+	border-radius: 100%;
+	border: none;
+	background-color: transparent;
+	background-image: url('../src/Icons/Actionable/ArrowBack.svg');
+	background-repeat: no-repeat;
+	background-position: right 50% top 50%;
+}
+
+.modalClose.flow {
+	position: absolute;
+	right: 8px;
+	top: 16px;
+}
+
+
+.modalClose:hover, .modalBack:hover, .modalBackMobile:hover, .modalCloseMobile:hover {
+  background-color: rgba(13, 13, 13, 0.05);
+  cursor: pointer;
+}
+
+.modalClose:focus, .modalBack:focus, .modalBackMobile:focus, .modalCloseMobile:focus {
+  outline: none;
+}
+
+.modalHeader {
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.modalBody {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.modalActionsWrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: right;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.modalActionsWrapperMobile {
+	display: flex;
+	flex-direction: column;
+	padding: 0 8px 0;
+}
+
+.modalActionsWrapperMobileFullscreen {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 32px;
+	left: 32px;
+	bottom: 32px;
+
+}
+
+.modalFlowBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: -32px -32px 0;
+	height: 80px;
+	box-shadow: inset 0 -1px var(--gray-4);
+}
+
+.modalFlowBarMobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: -32px -32px 0;
+	height: 56px;
+	box-shadow: inset 0 -1px var(--gray-4);
+}
+
+.modalFlowHeader {
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}

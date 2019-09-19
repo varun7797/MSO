@@ -1,0 +1,178 @@
+@import url("../src/colors.css");
+
+
+.sgbody {
+   overflow-x: hidden;
+     font-family: Karla;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-top: -8px;
+}
+
+.leftNav {
+  height: 100%;
+  width: 300px;
+  background-color: var(--white);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+
+  box-shadow: inset -1px 0 0 0 var(--gray-4);
+}
+
+.styleguidesvgwrap {
+  width: calc(100% - 324px);
+  min-width: 700px;
+}
+
+.styleguidesvgsubhead {
+  margin-bottom: 48px;
+}
+
+.styleguidesvghead {
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.styleguidesvgs {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.mainContent {
+  width:100%;
+  margin-left: 276px;
+  margin-top: 70px; 
+  overflow-x: scroll;
+}
+
+.maincontentTop {
+      font-family: Karla;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-left: 32px;
+  max-width: 900px;
+  padding-bottom: 80px;
+
+}
+
+.maincontentHeader {
+  font-family: MS Gloriola II Std;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 48px;
+}
+
+.maincontentsub {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.maincontentsubsub {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+
+.navHeader {
+	  border: solid 1px var(--gray-4);
+	  box-sizing: border-box;
+	  padding: 24px 48px 24px 32px;
+	    font-family: Karla;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: -1px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navHeader:hover {
+	background-color: var(--gray-6);
+}
+
+.navList {
+	transition: max-height 0.3s;
+	list-style: none;
+}
+
+.navlistItem {
+	padding: 16px 52px 16px;
+	  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.navlistItem.Active {
+  font-weight: bold;
+  	 background-color: #e3eaee;
+
+}
+
+.navlistItem:hover {
+	 background-color: rgba(227, 234, 238,0.5);
+}
+
+
+.navChevron {
+  background-image: url('../src/Icons/Actionable/chevrondown.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: left 50% top 50%;
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  right: 30px;
+  top: calc(50% - 4px);
+  transition: all 0.3s ease;	
+}
+
+.MSOheader{
+  font-family: MS Gloriola II Std;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.92;
+  letter-spacing: normal;
+  color: var(--black);
+  padding-top: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 74px;
+  background-image: url('../src/Icons/Actionable/MS Black.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: left 32px top 24px;	
+}
+

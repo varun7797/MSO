@@ -1,0 +1,126 @@
+@import url("../src/colors.css");
+
+.acc {
+  width: 100%;
+}
+.accordion {
+  height: 48px;
+  background-color: var(--gray-6);
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--gray-1);
+  display: flex;
+  align-items: center;
+  padding: 0 32px 0 16px;
+}
+
+.accordion:hover {
+	cursor:pointer;
+}
+
+.accordion.false {
+  background-image: url('../src/Icons/Actionable/ChevronDownBlue.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 8px top 50%;
+}
+
+.accordion.true {
+  background-image: url('../src/Icons/Actionable/ChevronUpBlue.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 8px top 50%;	
+}
+
+
+.accordionBody {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  padding: 16px 32px 0px 16px;
+}
+
+.accordionContent {
+	background-color: var(--white);
+	transition: max-height 0.5s;
+}
+
+a:link {
+	color: var(--light-blue);
+	text-decoration: underline;
+}
+
+.accordionDownload {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--light-blue);
+  background-image: url('../src/Icons/Actionable/Download.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: left 0px top 50%;
+  padding-left: 24px;
+}
+
+.accordionDownload > a {
+	text-decoration: none;
+}
+
+.accordionTerms {
+	padding: 16px;
+	margin: 0 -32px 0 -16px;
+	align-items: center;
+	background-color: #fef8eb;
+}
+
+.accordionTermsText {
+	margin-left: 28px;
+}
+
+.CheckboxContainer {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.CheckboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.Checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 2.5px;
+  border: solid 1.7px var(--light-blue);
+  background-color: var(--white);
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.CheckboxContainer input:checked ~ .Checkbox {
+  background-color: var(--light-blue);
+  background-image: url('../src/Icons/Actionable/Checkbox-checked.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 50% top 50%;
+}

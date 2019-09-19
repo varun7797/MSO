@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Button / Icon / Dark Theme - Default</title>
+    <desc>Created with Sketch.</desc>
+    <g id="----Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-+-Footer-/-Header-/-~Elements-/-NAV-Bar-/-Desktop" transform="translate(-1166.000000, -24.000000)">
+            <g id="Navigation">
+                <g id="Icons-buttons" transform="translate(1056.000000, 8.000000)">
+                    <g id="Button-/-Icon-/-Dark-Theme---Default" transform="translate(96.000000, 0.000000)">
+                        <circle id="BG" cx="24" cy="24" r="24"></circle>
+                        <g id="Icons-/-Actionable-/-Sitemail" transform="translate(12.000000, 12.000000)" fill="#FFFFFF" fill-rule="evenodd">
+                            <path d="M2,5.001 C2,4.448 2.455,4 2.992,4 L21.008,4 C21.556,4 22,4.445 22,5.001 L22,18.999 C22,19.552 21.545,20 21.008,20 L2.992,20 C2.444,20 2,19.556 2,18.999 L2,5.001 Z M3.5,18.5 L20.5,18.5 L20.5,5.5 L3.5,5.5 L3.5,18.5 Z M12,11.9395 L17.47,6.4695 C17.763,6.1765 18.237,6.1765 18.53,6.4695 C18.823,6.7625 18.823,7.2375 18.53,7.5305 L12.53,13.5305 C12.237,13.8235 11.763,13.8235 11.47,13.5305 L5.47,7.5305 C5.177,7.2375 5.177,6.7625 5.47,6.4695 C5.763,6.1765 6.237,6.1765 6.53,6.4695 L12,11.9395 Z M15.4697,14.5303 C15.1767,14.2373 15.1767,13.7623 15.4697,13.4693 C15.7627,13.1763 16.2377,13.1763 16.5307,13.4693 L19.3587,16.2983 C19.6517,16.5913 19.6517,17.0653 19.3587,17.3583 C19.0657,17.6513 18.5907,17.6513 18.2977,17.3583 L15.4697,14.5303 Z M8.3589,14.5303 L5.5299,17.3583 C5.2369,17.6513 4.7629,17.6513 4.4699,17.3583 C4.1769,17.0653 4.1769,16.5913 4.4699,16.2983 L7.2979,13.4693 C7.5909,13.1763 8.0659,13.1763 8.3589,13.4693 C8.6519,13.7623 8.6519,14.2373 8.3589,14.5303 Z" id="Icon"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

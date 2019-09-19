@@ -1,0 +1,140 @@
+@import url("../src/colors.css");
+
+.searchWrapper {
+  display: flex;
+  position: relative;
+}
+
+.search {
+  height: 40px;
+	width: 100%;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--gray-2);
+  background-image: url('../src/Icons/Actionable/Search.svg');
+  background-repeat: no-repeat;
+  position: relative;
+    transition: all 0.2s ease;
+}
+
+.search:focus {
+	outline: none;
+  color: var(--black);
+}
+
+.search.form {
+	background-color: transparent;
+	border: none;
+  box-shadow: inset 0px -1px 0 0 var(--gray-2);
+	box-sizing: border-box;
+	background-position: left 2px top 50%;
+  padding-left: 32px;
+}
+
+.search.form:focus {
+    box-shadow: inset 0px -2px 0 0 var(--light-blue);
+}
+
+
+.search.filter{
+  border: none;
+  box-sizing: border-box;
+  box-shadow: inset 0 0px 0px 1px var(--gray-2);
+  background-color: var(--white);
+  background-position: left 8px top 50%;
+  padding-left: 40px;
+}
+
+.search.filter:focus {
+    box-shadow: inset 0px 0px 0px 2px var(--light-blue);
+}
+
+.searchClose {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url('../src/Icons/Actionable/CloseBlack.svg');
+  background-repeat: no-repeat; 
+  background-color: transparent;
+  border: none;
+}
+
+.searchClose:hover {
+  cursor: pointer;
+}
+
+.searchClose:focus {
+  outline: none
+}
+
+.searchClose.form {
+  top: 12px;
+  right: -2px;
+}
+
+.searchClose.filter {
+  top: 12px;
+  right: 4px;
+
+}
+
+.searchListWrapper {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  box-sizing: border-box;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  border: solid 1px var(--gray-4);
+  background-color: var(--white);
+  padding: 8px 0px 8px;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  list-style-type: none;
+  top: 40px;
+
+}
+
+.searchListItem {
+  padding: 6px 16px 6px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+      transition: all 0.2s ease;
+}
+
+.listItemSymbol {
+  text-align: right;
+}
+
+.searchListItem:hover {
+  background-color: var(--black-5);
+  cursor: pointer;
+}
+
+.searchListHeader {
+  padding: 6px 16px 6px;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  user-select: none;
+}
+
+.searchIncludes {
+  color: var(--light-blue);
+}

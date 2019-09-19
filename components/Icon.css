@@ -1,0 +1,97 @@
+@import url("../src/colors.css");
+
+.Icon.light {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.Icon.light:hover {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--black-5);
+  outline: none;
+}
+
+.Icon.light:focus {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.15);
+  color: var(--white);
+  outline: none;
+}
+
+.Icon.light:active {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--black-20);
+  outline: none;
+}
+
+.Icon.dark {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.Icon.dark:hover {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--white-20);;
+  outline: none;
+}
+
+.Icon.dark:focus {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--white-30);
+  outline: none;
+}
+
+.Icon.dark:active {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--white-40);
+  outline: none;
+}
+
+.wrap.light {
+	width: 72px;
+	height: 72px;
+	background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap.dark {
+	width: 72px;
+	height: 72px;
+	background-color: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  vertical-align: middle;
+}
+

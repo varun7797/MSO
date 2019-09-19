@@ -1,0 +1,183 @@
+@import url("../../src/colors.css");
+
+.tab-list {
+  background: transparent;
+  border-bottom: none;
+  padding-left: 0;
+  color: var(--light-blue);
+
+}
+
+
+
+.tabListItemPrimary {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 16px 12px;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-blue);
+  box-shadow: inset 0 -1px 0 0 var(--gray-4);
+  background-color: var(--white);
+    transition: all 0.2s ease;
+}
+
+.tabListItemPrimary:hover {
+  cursor: pointer;
+  outline: 0;
+  background-color: var(--gray-5);
+  box-shadow: none;
+  color: var(--medium-blue);
+}
+
+.tabListItemActivePrimary {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 16px 12px;
+  box-shadow: inset 0 4px 0 0 var(--light-blue), -5px 0 5px -5px rgba(218, 218, 218), 5px 0 5px -5px rgba(218, 218, 218);
+  position: relative;
+  background-color: var(--white);
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+
+}
+
+.tabListItemSecondary {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 24px 12px 0;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-blue);
+  box-shadow: inset 0 -1px 0 0 var(--gray-4);
+  background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.tabListItemSecondary:hover {
+  cursor: pointer;
+  outline: 0;
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+.tabListItemActiveSecondary {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 24px 12px 0;
+  box-shadow: inset 0 -1px 0 0 var(--gray-4);
+    background-color: transparent;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-blue);
+  text-decoration: underline;
+}
+
+.tabListItemIcon {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 64px 12px 16px;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-blue);
+  box-shadow: inset 0 -1px 0 0 var(--gray-4);
+  background-color: var(--white);
+    transition: all 0.2s ease;
+}
+
+.tabListItemIcon:hover {
+  cursor: pointer;
+  outline: 0;
+  background-color: var(--gray-5);
+  box-shadow: none;
+  color: var(--medium-blue);
+}
+
+.tabListItemActiveIcon {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 64px 12px 16px;
+ box-shadow: inset 0 4px 0 0 var(--light-blue), -5px 0 5px -5px rgba(218, 218, 218), 5px 0 5px -5px rgba(218, 218, 218);
+ position: relative;
+    background-color: var(--white);
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+
+}
+
+
+.tabListItemHeader {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 0px 12px;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  margin-right: 24px;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--light-blue);
+    transition: all 0.2s ease;
+}
+
+.tabListItemHeader:hover {
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  box-shadow: inset 0 -4px 0 0 var(--dark-blue);
+  color: var(--pale-blue);
+}
+
+.tabListItemActiveHeader {
+  display: inline-block;
+  list-style: none;
+  padding: 12px 0px 12px;
+  box-shadow: inset 0 -4px 0 0 var(--dark-blue);
+    background-color: var(--light-blue);
+  font-family: Karla;
+  font-size: 16px;
+  margin-right: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+
+}

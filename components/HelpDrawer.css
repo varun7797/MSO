@@ -1,0 +1,112 @@
+@import url("../src/colors.css");
+
+
+.helpDrawerWrapper {
+  height: calc(100% - 104px);
+  max-width: calc(50% - 48px);
+  box-shadow: 0 1px 38px 0 rgba(51, 51, 51, 0.42), 0 6px 10px 0 rgba(51, 51, 51, 0.18), 0 3px 5px -1px rgba(51, 51, 51, 0.26);
+  background-color: var(--white);
+  padding: 72px 24px 32px;
+  position: relative;
+  z-index: 9999
+}
+
+.helpDrawerWrapper.fullScreen {
+	position: fixed;
+	padding: 72px 48px 32px;
+	max-width: calc(50% - 96px);
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.helpDrawerWrapper.modal {
+	position: relative;
+}
+
+.hdTitle {
+  font-family: MSGloriolaIIStd;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.hdTitle.true {
+  font-family: MSGloriolaIIStd;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.hdBody {
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  max-height: calc(100% - 180px);
+  position: relative;
+  overflow-y: scroll;
+}
+
+.sh {
+ font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: 16px;
+
+}
+
+.b + .sh {
+	margin-top: 16px;
+}	
+
+.hdFooter {
+font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+  position: absolute;
+  left: 0;
+  padding: 0 24px 0;
+  bottom: 32px;
+}
+
+.hdFooter.fullScreen {
+	padding: 0 48px 0 ;
+}
+
+#hdButton {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.helpDrawerMobile {
+  padding: 72px 24px 32px;
+  box-shadow: 0 1px 38px 0 rgba(51, 51, 51, 0.42), 0 6px 10px 0 rgba(51, 51, 51, 0.18), 0 3px 5px -1px rgba(51, 51, 51, 0.26);
+  background-color: var(--white);
+  position: relative;
+}

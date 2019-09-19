@@ -1,0 +1,364 @@
+@import url("../src/colors.css");
+
+
+.carouselDesktop, .carouselDesktopAuto{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.carouselDesktopAuto {
+	padding-bottom: 48px;
+}
+
+.carouselDesktop.small, .carouselDesktopAuto.small {
+	height: 275px;
+}
+
+.carouselDesktop.large, .carouselDesktopAuto.large {
+	height: 500px;
+}
+
+.carouselDesktop.light, .carouselDesktopAuto.light {
+	background-color: var(--white);
+}
+
+.carouselDesktop.dark, .carouselDesktopAuto.light {
+	background-color: var(--light-blue);
+}
+
+.back, .next {
+  width: 48px;
+  height: 48px;
+  background-color: var(--white);
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 24px);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.back:hover, .next:hover {
+	background-color: var(--gray-5);
+}
+
+.back:focus, .next:focus {
+	background-color: var(--gray-4);
+}
+
+.back:active, .next:active {
+	background-color: var(--gray-3);
+}
+
+.back {
+	left: 32px;
+	 background-image: url('../src/Icons/Actionable/ChevronLeft.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 20px top 50%;
+}
+
+.next {
+	right: 32px;
+	 background-image: url('../src/Icons/Actionable/ChevronRight.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 20px top 50%;
+}
+
+.carouselImgs {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.carouselimg {
+	  min-height: 275px;
+
+
+}
+
+.carouselimgmobile {
+	  display: block;
+	  min-height: 100%;
+	  min-width: 100%;
+
+}
+
+.carouselIndicator {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.indicatorBubble {
+  width: 8px;
+  height: 8px;
+    background-color: var(--gray-4);
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px;
+        	transition: background-color 0.3s ease;
+}
+
+.indicatorBubbleActive {
+  width: 8px;
+  height: 8px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px;
+    	background-color: var(--light-blue);
+    	transition: background-color 0.3s ease;
+}
+
+
+.indicatorBubble:hover {
+	background-color: var(--dark-blue);
+}
+
+
+.indicatorBubble.dark, .indicatorBubbleActive.dark {
+  border: solid 1px var(--white);
+}
+
+.carouselText {
+	position: absolute;
+	padding: 24px;
+	top: 0;
+	left: 96px;
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	max-width: 30%;
+}
+
+.carouselTextMobile {
+	position: absolute;
+	padding: 24px;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+
+}
+
+
+
+
+.carouselHeaderMobile {
+font-family: MS Gloriola II Std;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.carouselDetailsMobile {
+	  font-family: Karla;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.carouselDetailsMobile.light, .carouselHeaderMobile.light {
+	color: var(--black);
+}
+
+.carouselDetailsMobile.dark, .carouselHeaderMobile.dark {
+	color: var(--white);
+}
+
+
+.carouselText.small {
+	height: calc(275px - 112px);
+}
+
+.carouselText.large {
+	height: calc(500px - 112px);
+}
+
+.carouselText.light, .carouselTextMobile.light {
+	background-color: var(--white);
+	opacity: 0.8;
+}
+
+.carouselText.dark, .carouselTextMobile.dark {
+	background-color: rgba(24, 122, 186, 0.8);
+}
+
+.carouselHeader.light {
+  font-family: MS Gloriola II Display;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.carouselHeader.large {
+	font-size: 48px;
+}
+
+.carouselHeader.small {
+	font-size: 32px;
+}
+
+.carouselDetails.small {
+	font-size: 14px;
+}
+
+.carouselDetails.large {
+	font-size: 16px;
+}
+
+.carouselDetails.light {
+	  font-family: Karla;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.carouselDetails.dark {
+	  font-family: Karla;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--white);
+}
+
+.carouselHeader.dark {
+	  font-family: MS Gloriola II Std;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.carouselIndicatorAuto {
+	background-color: var(--white);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.carouselIndicatorAutoMobile {
+	background-color: var(--white);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.carouselIndicatorMob {
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.pauseCarousel {
+	  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin: 12px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+	 background-image: url('../src/Icons/Actionable/Pause.svg');
+  background-repeat: no-repeat;
+  background-position: right 50% top 50%;
+  transition: background-color 0.1s ease;
+}
+
+.pauseCarousel:hover {
+  background-color: var(--black-5);
+}
+
+.pauseCarousel:focus {
+ background-color: rgba(51, 51, 51, 0.15);
+}
+
+.pauseCarousel:active {
+	  background-color: var(--black-20);
+}
+
+.carouselMobile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.carouselMobileManual {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+.indicatorsonmobile {
+	background-color: yellow;
+		position: absolute;
+			z-index: 1;
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+	bottom: 8px;
+	background-color: transparent;
+}
+
+.carouselIndicatorManualMobile {
+
+
+
+
+		display: flex;
+	flex-direction: row;
+}
+
+.carouselImgsmanualmob {
+		display: flex;
+	flex-direction: row;
+	flex-wrap: none;
+	min-height: 100%;
+	position: relative;
+}

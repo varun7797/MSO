@@ -1,0 +1,83 @@
+@import url("../src/colors.css");
+
+.gradientTakeoverBg {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(60deg, #0f8cc4, #0a6fa3);
+}
+
+.gradientTakeoverText {
+	    font-family: MS Gloriola II Display;
+  font-size: 48px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+	padding: 0 40px 0 ;
+
+}
+
+.gradientTakeoverLoadBubble1 {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 100%;
+  -webkit-animation: mymove 0.8s infinite;
+  animation: mymove 0.8s infinite;
+}
+
+@-webkit-keyframes mymove {
+  from {background-color: rgba(255, 255, 255, 0.3)}
+  to {background-color:  rgba(255, 255, 255, 0.1)}
+    from {background-color: rgba(255, 255, 255, 1)}
+  to {background-color:  rgba(255, 255, 255, 0.3)}
+}
+
+@keyframes mymove {
+  from {background-color: rgba(255, 255, 255, 0.3)}
+  to {background-color:  rgba(255, 255, 255, 0.1)}
+    from {background-color: rgba(255, 255, 255, 1)}
+  to {background-color:  rgba(255, 255, 255, 0.3)}
+}
+
+
+.gradientTakeoverLoadBubble2 {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.0.3);
+	border-radius: 100%;
+	  -webkit-animation: mymove 0.8s infinite;
+  animation: mymove 0.8s infinite;
+  animation-delay: 0.2s;
+}
+
+
+.gradientTakeoverLoadBubble3 {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 100%;
+	  -webkit-animation: mymove 0.8s infinite;
+  animation: mymove 0.8s infinite;
+  animation-delay: 0.4s;
+}
+
+
+.gradientTakeoverLoadBar {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 24px;
+	margin-bottom: 40px;
+
+}
